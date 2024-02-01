@@ -1,0 +1,86 @@
+.main{
+    /* border-top: 10px solid deeppink; */
+    height:200px;
+    width:300px;
+    box-shadow: 5px 10px 10px 5px lightgrey;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#pink{
+   border-top: 10px solid deeppink;
+}
+#cyan{
+   border-top: 10px solid lightseagreen;
+}
+#cyan1{
+ background-color: lightseagreen;
+}
+#green{
+   border-top: 10px solid lightgreen;
+}
+#green1{
+   background-color: lightgreen;
+ }
+#yellow{
+   border-top: 10px solid goldenrod;
+}
+#yellow1{
+   background-color: goldenrod;
+ }
+#violet{
+   border-top: 10px solid violet;
+}
+#violet1{
+   background-color: violet;
+ }
+#lpink{
+   border-top: 10px solid lightpink;
+}
+#lpink1{
+   background-color: lightpink;
+ }
+.dis{
+   display: inline-flex;
+   margin-left: 50px;
+   margin-right: 50px;
+}
+.main1{
+   height:60px;
+   width:60px;
+   margin-top: 30px;
+   margin-left: 20px;
+   border-radius: 200px;
+}
+#pink1{
+   background-color: deeppink;
+}
+#edit{
+   margin-top: 30px;
+   color: white;
+   margin-left: 12px;
+}
+#edit1{
+   margin-top: 30px;
+ color: white;
+   margin-left: 12px;
+   margin: 0px;
+   height: 50px;
+   width: 50px;
+
+}
+.btn{
+   background-color: lightpink;
+   color: white;
+   height:30px;
+   width: 150px;
+   border-radius: 20px;
+   border: none;
+}
+a{
+   text-decoration-line: none;
+   color: black;
+   font-size: 20px;
+}

@@ -1,0 +1,40 @@
+.external{
+    background-color:azure;
+    border:1px solid rosybrown;
+    font-size: 50px;
+}
+#main{
+    background-color: antiquewhite;
+    height:200px;
+    width:200px;
+}
+span{
+    color: cadetblue;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 3px;
+    padding: 3px;
+}
+input[type="text"]{
+    color: rgb(253, 66, 81);
+}
+input[type="number"]{
+    color: rgb(15, 154, 108);
+}
+input[href]{
+    background-color: aqua;
+}
+a:visited{
+    color: rgb(24, 249, 96);
+}
+a:hover{
+    font-size: 20px;
+    color: cadetblue;
+}
+a:active{
+    color: aquamarine;
+    font-size: 50px;
+}

@@ -1,0 +1,111 @@
+*{
+    margin: 0px;
+}
+.header{
+    height:50px;
+     background-color: white;
+     border-radius: 2px;
+     box-shadow: 0 8px 16px 0 lightgrey;
+ }
+ .button:active{
+    background-color: aquamarine;
+}
+.butred:active{
+    background-color: aquamarine;
+}
+.butred{
+    color:white;
+    background-color:rgb(227, 65, 15);
+    border: none;
+    margin: 3px;
+    font-size: 15px;
+    margin-top: 5px;
+    height:30px;
+    width:80px;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 lightgrey;
+}
+.button{
+    color:white;
+    background-color: lightskyblue;
+    margin: 3px;
+    border: none;
+    font-size: 15px;
+    height:30px;
+    width:80px;
+    margin-top: 5px;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 lightgrey;
+}
+.box{
+    height:500px;
+    width:450px;
+    box-shadow: 0 8px 16px 0 lightgrey;
+    margin: 10px;
+}
+.image{
+    margin: 20px;
+    display: inline;
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+}
+.span1{
+    font-weight: bold;
+    position: relative;
+    font-size: 30px;
+    bottom: 100px;
+    left: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.ptag{
+     display:inline ;
+     font-size: 20px;
+     margin: 0px;
+     position: relative;
+     bottom: 70px;
+     right: 70px;
+}
+.task-list{
+    list-style: none;
+}
+#cir{
+    color: rgb(24, 213, 150);
+    display: inline;
+}
+li{
+    display: inline-flex;
+}
+.h{
+   margin-left: 30px;
+   font-size: 15px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.date{
+    color: darkgrey;
+    margin-left: 130px;
+}
+.pt{
+    color: darkgray;
+    margin-top: 5px;
+    margin-left: 48px;
+    font-size: 18px;
+}
+.vr{
+    position: absolute;
+    top: 100px;
+    border-left: 2px solid rgb(17, 211, 147);
+    height: 150px;
+    width: 50px;
+    margin-left: 47px;
+    margin-top: 170px;
+}
+.vr2{
+    position: absolute;
+    top: 622px;
+    border-left: 2px solid rgb(17, 211, 147);
+    height: 150px;
+    width: 50px;
+    margin-left: 47px;
+    margin-top: 170px;
+}
