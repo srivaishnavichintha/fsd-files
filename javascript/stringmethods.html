@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string functions</title>
+</head>
+<body>
+    <script>
+        let str="hello world this is a fullstack development course"
+        let str1='sri'
+        let str2='vaishnavi'
+        let str3='sri_vaishnavi'
+        function strmethods(strname){
+            document.write(strname+'<br>')
+        }
+        strmethods('string = '+str)
+        strmethods('length ='+ str.length);
+        strmethods(' substring = '+str.substr(6,5));
+        strmethods('substring = '+str.substring(0,6));
+        strmethods('character at 15= '+str.charAt(15));
+        strmethods('index of = '+str.indexOf('w'));
+        strmethods('to lowercase ='+str.toLowerCase());
+        strmethods('to lowercase ='+str.toUpperCase());
+        strmethods('concatenation of two = '+str1.concat(str2));
+        strmethods('trim method = '+str.trim());
+        strmethods('split = ' +str3.split('_'));
+        strmethods('split method =' +str.split(' '));
+        strmethods('starts with h = '+str.startsWith('h'));
+        strmethods('endswith of h = '+str.endsWith('h'));
+        strmethods('slice of the string = '+str.slice(1,2));
+        strmethods('repeat function = '+str1.repeat(2))
+        strmethods('sttr replace = '+str.replace('hello','hi'))
+    </script>
+</body>
+</html>

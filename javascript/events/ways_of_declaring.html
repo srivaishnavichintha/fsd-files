@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- inline -->
+    <!-- <button onclick="sample()" >click here</button>
+    <b id="sp_id"></b> -->
+
+    <button id="btn_id">click here</button>
+    <script>
+    //     inline 
+    //    function sample(){
+    //     document.body.style.backgroundColor="cadetblue"
+    //     document.getElementById("sp_id").innerText="this is inline "
+    //    }
+
+    // event properties
+        //   let btn=document.getElementById("btn_id")
+        //   btn.onclick = change;
+        //   function change(){
+        //     document.body.style.background="lightblue";
+        //   }
+
+        let btn=document.getElementById("btn_id")
+        btn.addEventListener("click",sample);
+        function sample(){
+            document.body.style.background="grey"
+        }
+        btn.addEventListener("dbclick",function(){
+            document.body.style.background="lightblue"
+        })
+    </script>
+</body>
+</html>

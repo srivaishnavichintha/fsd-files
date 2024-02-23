@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p_id"></p>
+    <form>
+        <label>key up:</label><input type="text"  onkeyup="getbg(this.value)">
+        <label>key down:</label><input type="text"  onkeydown="getbg(this.value)">
+        <label>key press:</label><input type="text"  onkeypress="getbg(this.value)">
+    </form>
+    <script>
+        function getbg(value){
+            document.getElementById("p_id").innerText=value
+        }
+    </script>
+</body>
+</html>

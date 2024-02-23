@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        .xkcnv{
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <p id="p_id">HTML DOM</p>
+    <p class="p_c"> hello</p>
+    <p class="p_c"> hello</p>
+    <p>para1</p>
+    <p>para2</p>
+    <span>span1</span>
+    <span>span1</span>
+    <span>span1</span>
+    <br><br><hr><br>
+    <button onclick="list()">click me to know the Abbrevation</button>
+    <ol>
+        <li id="l1">AEC</li>
+        <li id="l2">ACET</li>
+        <li id="l3">ACOE</li>
+    </ol>
+    <hr>
+    <script>
+        // entire document
+        console.log(document);
+        console.log(document.body.p);
+        // getelementbyid
+        let pi=document.getElementById('p_id');
+             //----> // to modify css
+        pi.style.color='red';
+        console.log(pi);
+        //getelementsbyclassname
+        let px=document.getElementsByClassName('p_c');
+        px[0].innerText='Changed';
+        px[0].style.fontSize="50px";
+        console.log(px);
+        console.log(px[1]);
+        //getelementbyTagnmae
+        let t=document.getElementsByTagName('span');
+        console.log(t);
+        t[1].style.color="yellow";
+        console.log(t[1]);
+        function list(){
+            document.getElementById('l1').innerHTML="<b>Aditya Enginnering College</b>";
+            document.getElementById('l1').style.backgroundColor="pink";
+            document.getElementById('l2').innerText="Aditya College Of Enginnering";
+            document.getElementById('l2').style.border="3px solid green";
+            document.getElementById('l3').innerText="Aditya College of Enginnering and Technology";
+            document.getElementById('l3').style.fontFamily='Courier New', Courier, monospace;
+            console.log(l1);
+        }
+    </script>
+</body>
+</html>

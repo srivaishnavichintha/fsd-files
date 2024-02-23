@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>count is:<span id="num">0</span></p>
+    <button id="incre"> increment</button> <button id="decre"> decrement</button>
+    <script>
+        let n = 1;
+        let btn1 =document.getElementById("incre").addEventListener("click",function(){
+             const number=document.getElementById('num')
+               number.innerHTML =n++;
+        })
+        let btn2 =document.getElementById("decre").addEventListener("click",function(){
+             const number=document.getElementById('num')
+               number.innerHTML =n--;
+        })
+    </script>
+</body>
+</html>

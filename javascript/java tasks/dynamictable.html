@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1px">
+        <tr>
+            <th>course name</th>
+            <th>course number</th>
+            <th>course fees</th>
+            <th>place</th>
+            <tbody id="tbdy">
+
+            </tbody>
+        </tr>
+    </table>
+    <script>
+        let obj =[{
+            cn:'html',
+            cnum:23451,
+            cf:235,
+            pl:'dwp'
+        },{
+            cn:'javascript',
+            cnum:23451,
+            cf:567,
+            pl:'dwp'
+        },
+         {
+            cn:'css',
+            cnum:23451,
+            cf:345,
+            pl:'dwp'
+         },
+        {
+            cn:'bootstrap',
+            cnum:23451,
+            cf:789,
+            pl:'dwp'
+        }]
+        for(let i=0 ; i<obj.length;i++){
+            var row = document.createElement("tr")
+                var cell= [obj[i].cn,obj[i].cnum,obj[i].cf,obj[i].pl]
+                for(let k=0;k<cell.length;k++){
+                    var col=document.createElement("td")
+                    col.innerText=cell[k]
+                    console.log(col)
+                    row.appendChild(col)
+                }
+            const bdy=document.getElementById("tbdy")
+            bdy.appendChild(row)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration</title>
+    <style>
+        .pic{
+    position:absolute;
+    top: 150px;
+    left: 70px;
+}
+h4{
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-bottom: 0px;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.tag{
+    color: rgb(190, 186, 186);
+    margin: 0px;
+    font-size: 10px;
+    margin-left: 55px;
+}
+h1{
+    margin-top: 430px;
+    margin-left: 70px;
+    margin-bottom: 0px;
+}
+.ptag{
+    color: darkgrey;
+    margin-top: 0px;
+    font-size: 13px;
+    /* margin: 0px; */
+    margin-left: 70px;
+    font-style:italic;
+    height: 100px;
+}
+.main{
+   width: 500px;
+   height: 700px;
+   /* border: 1px solid black; */
+}
+.form{
+    padding-top: 50px;
+    padding-left: 50px;
+    height: 500px;
+    width: 650px;
+    /* border: 1px solid black; */
+    display:inline;
+}
+.in{
+    margin-right: 20px;
+    border: 1px solid darkgray;
+    height: 50px; 
+    width: 300px;
+    border-radius: 5px;
+    text-align: center;
+    /* padding:15px;
+    padding-left: 40px; */
+}
+.input{
+    position: absolute;
+    /* top:160px;
+    left:600px; */
+}
+.email{
+    margin-right: 20px;
+    border: 1px solid darkgray;
+    /* height: 10px; */
+    width: 580px;
+    border-radius: 5px;
+    padding:15px;
+    padding-left: 40px;
+}
+.input #us {
+   position: absolute;
+   margin-top: 15px;
+   margin-left: 20px;
+   color: rgb(129, 124, 124);
+} 
+.input #btn1 {
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 230px;
+    color: rgb(251, 249, 249);
+ } 
+
+ .job{
+    margin-right: 20px;
+    border: 1px solid darkgray;
+    /* height: 10px; */
+    width: 635px;
+    border-radius: 5px;
+    color: rgb(107, 102, 102);
+    padding:15px;
+    padding-left: 40px;
+}
+#ph{
+    margin-right: 20px;
+    border: 1px solid darkgray;
+    /* height: 10px; */
+    width: 500px;
+    border-radius: 5px;
+    color: rgb(107, 102, 102);
+    padding:15px;
+    margin: 0px;
+}
+#inr{
+    margin-right: 0px; 
+    border: 1px solid darkgray;
+    /* height: 10px; */
+    width: 100px;
+    border-radius: 5px;
+    color: rgb(107, 102, 102);
+    padding:15px;
+    padding-left: 40px;
+}
+
+ 
+.account{
+    width: 635px;
+    height: 30px;
+    background-color: #3e66f5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.face{
+    width: 635px;
+    height: 30px;
+    background-color: #365486 ;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.h{
+    width:300px ;
+    height: 2px;
+    background-color: lightgrey;
+    border: none;
+}
+span{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+@media screen  and (max-width:484px){
+    .main{
+        width:100%;
+    }
+    .form{
+        width:100%;
+    }
+}
+
+
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>   
+<body>
+    <div style="display: inline-flex;">
+        <div class="main">
+            <h4>company name</h4>
+            <p class="tag"> some awesome tagline</p>
+            <div class="pic">
+                <img src="reg.png" height="300px" width="400px">
+            </div>
+            <h1>Create an Account</h1><br>
+            <p class="ptag">Create a minimal registeration page using Bootstrap 4<br> HTML form elements.<br>
+                Snippet By <u>Bootstrapious</u></p>
+        </div>
+        <div class="form">
+         <form >
+            <div class="input"> 
+                <i class="fa fa-user icon" id="us"></i>
+                <input type="text" placeholder=" First name" class="in">
+                <i class="fa fa-user icon" id="us"></i>
+                <input type="text" placeholder=" Last name" class="in"><br><br>
+                <i class="fa fa-envelope icon" id="us"></i>
+                <input type="email" placeholder=" Email" class="email"><br><br>
+                <!-- <input type="number"  id="inr"> -->
+                <i class="fa-solid fa-square-phone" id="us"></i>
+                <select id="inr">
+                      <option>91+</option>
+                </select>
+                <input type="number" placeholder="phone number" maxlength="10" id="ph" ><br><br>
+                <i class="fa-brands fa-black-tie" id="us"></i>
+                <select class="job" >
+                    <option>Choose your job</option>
+                    <option>engineer</option>
+                    <option>developer</option>
+                    <option>tester</option>
+                    <option>techlead</option>
+                </select><br><br>
+                <i class="fa fa-lock icon" id="us"></i>
+                <input type="password" placeholder=" Password" class="in">
+                <i class="fa fa-lock icon" id="us"></i>
+                <input type="password" placeholder=" confirm password" class="in"><br><br>
+                <button class="account"> Create your account</button><br><br>
+                <div style="display: inline-flex;">
+                 <hr class="h"><span>or</span><hr class="h">
+                </div><br><br>
+                <i class="fa-brands fa-facebook-f" id="btn1"></i>
+                <button class="face"> Countinue with face book</button><br><br>
+                <i class="fa-brands fa-twitter" id="btn1"></i> 
+                <button class="account" style="background-color: rgb(25, 195, 247) ;"> Countinue with twitter</button><br><br>
+             </div> 
+        </form><br><br><br><br>
+        </div>
+    </div>
+</body>
+</html>

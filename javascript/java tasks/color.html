@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <fieldset style="width: 100px;height: 50px;">
+            <legend>color</legend>
+            <label>enter color</label><input type="text"  onkeyup="getbg(this.value)">
+        </fieldset>
+    </center>
+    
+    <script>
+         function getbg(value){
+            document.body.style.background=value
+        }
+    </script>
+</body>
+</html>

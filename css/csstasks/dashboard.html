@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        *{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        body{
+            background-color: aliceblue;
+            margin: 0px;
+        }
+        .dash{
+            background-color: rgb(25, 195, 247);
+            height:100px;
+            margin: 0px;
+        }
+        h1{
+          color: white;
+          margin: 0px;
+          padding-top: 30px;
+        }
+        .port{
+            height:300px;
+            width: 340px;
+            /* border: 1px solid black; */
+            padding-top: 30px;
+            padding-left: 20px;
+        }
+        .main{
+            height:600px;
+            width: 900px;
+            /* border: 1px solid black; */
+        }
+        .main1{
+            height:200px;
+            width: 880px;
+            /* border: 1px solid black; */
+            background-color: rgb(25, 195, 247);
+            margin-top: 30px;
+            border-radius: 20px;
+            margin-right: 10px ;
+            display: inline-flex;
+        }
+        .main2{
+            height:200px;
+            width: 900px;
+            display: inline-flex;
+            /* border: 1px solid black; */
+        }
+        .search{
+            height: 35px;
+            background-color: rgb(25, 195, 247) ;
+            width: 305px;
+            border: none;
+            font-size: 20px;
+            color: white;
+            box-shadow: 0px 3px 4px 0px lightgrey;
+        }
+        .loc{
+            height: 35px;
+            background-color: rgb(108, 112, 113) ;
+            width: 305px;
+            border: none;
+            font-size: 20px;
+            color: white;
+            box-shadow: 0px 3px 4px 0px lightgrey;
+        }
+        .in{
+            font: 25px;
+            margin: 0px;
+            height: 35px;
+            width:300px;
+        }
+        .h{
+            width:130px ;
+            height: 2px;
+            background-color: lightgrey;
+            border: none;
+            margin-left: 8px;
+            margin-right: 8px;
+        }
+        span{
+            color: darkgray;
+            font: 20px;
+        }
+        .one{
+            color: white;
+            padding-left: 30px ;
+            padding-top: 20px;
+        }
+        .two{
+            margin-left: 400px;
+            margin-top: 30px ;
+            color: white;
+        }
+        sup{
+            font-size: 8px;
+        }
+        .grey{
+            height: 220px;
+            width: 180px;
+            background-color:  rgb(108, 112, 113);
+            margin-right:30px;
+            border-radius: 20px;
+            color: white;
+            padding: 10px;
+        }
+        .pt{
+            font-size: 10px;
+        }
+        .img{
+            margin: 0px;
+        }
+        .rain{
+            margin-left: 400px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="dash"><center><h1>Weather Dashboard</h1></center> </div>
+    <div style="display: inline-flex;">
+        <div class="port">
+              <h3>Enter a City Name</h3>
+              <input type="text" placeholder="e.g,Newyork,London,Tokya" class="in"><br><br>
+              <button class="search">search</button><br><br>
+              <div style="display: inline-flex;">
+                <center> <hr class="h"></center><span>or</span><center><hr class="h"></center>
+              </div><br><br>
+              <button class="loc">use current location</button>
+        </div>
+        <div class="main">
+            <div class="main1">
+                <div class="one">
+                    <h2>London (2023-06-09)</h2>
+                    <p>Temperature : 18:71<sup>O</sup>C</p>
+                    <p>Wind : 4.31 M/S</p>
+                    <p>Humidity : 76 %</p>
+                </div>
+                <div class="two">
+                    <img src="rain.png " >
+                    <p>moderate rain</p>
+                </div>
+            </div><br>
+            <h3> &nbsp;&nbsp;&nbsp;4-Day Forecast</h3><br>
+            <div class="main2">
+                <div class="grey">
+                    <h4> (2023-06-09)</h4>
+                    <img src="weather.png" class="img">
+                    <p class="pt">Temperature : 18:71<sup>O</sup>C</p>
+                    <p class="pt">Wind : 4.31 M/S</p>
+                    <p class="pt">Humidity : 76 %</p>
+                </div>
+                <div class="grey">
+                    <h4> (2023-06-09)</h4>
+                    <img src="sun.png" class="img">
+                    <p class="pt">Temperature : 18:71<sup>O</sup>C</p>
+                    <p class="pt">Wind : 4.31 M/S</p>
+                    <p class="pt">Humidity : 76 %</p>
+                </div>
+                <div class="grey">
+                    <h4> (2023-06-09)</h4>
+                    <img src="thun.png"class="img" >
+                    <p class="pt">Temperature : 18:71<sup>O</sup>C</p>
+                    <p class="pt">Wind : 4.31 M/S</p>
+                    <p class="pt">Humidity : 76 %</p>
+                </div>
+                <div class="grey">
+                    <h4> (2023-06-09)</h4>
+                    <img src="wind.png" class="img">
+                    <p class="pt">Temperature : 18:71<sup>O</sup>C</p>
+                    <p class="pt">Wind : 4.31 M/S</p>
+                    <p class="pt">Humidity : 76 %</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

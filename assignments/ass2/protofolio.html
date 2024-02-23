@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="protofolio.css">
+<style>
+  .button{
+    color:white;
+    background-color: lightskyblue;
+    border: none;
+    font-size: 15px;
+    height:30px;
+    width:85px;
+    margin-top: 5px;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 lightgrey;
+}
+.button2{
+    color:white;
+    background-color: blue;
+    border: none;
+    font-size: 15px;
+    height:30px;
+    width:90px;
+    margin-top: 5px;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 lightgrey;
+}
+.button1{
+    color:white;
+    background-color: rgb(17, 247, 170);
+    border: none;
+    font-size: 15px;
+    height:30px;
+    width:80px;
+    margin-top: 5px;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 lightgrey;
+}
+.header{
+   height:50px;
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 0 8px 16px 0 lightgrey;
+}
+.form{
+    display: inline-flex;
+}
+/* .button:active{
+    background-color: aquamarine;
+}
+.butred:active{
+    background-color: aquamarine;
+} */
+.butred{
+    color:white;
+    background-color:rgb(227, 65, 15);
+    border: none;
+    font-size: 15px;
+    height:30px;
+    width:80px;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 lightgrey;
+}
+.profile{
+    height:450px;
+    width:300px;
+    background-color: white;
+    margin-top:15px;
+    margin-left:20px;
+    box-shadow: 0 8px 16px 0 lightgrey;
+    border-radius: 2px;
+}
+.main{
+    height:250px;
+    width:900px;
+    background-color: white;
+    margin-top:15px;
+    margin-left:20px;
+    box-shadow: 0 8px 16px 0 lightgrey;
+    border-radius: 2px;
+}
+.form{
+    margin-top: 15px;
+    margin-left:52px;
+    width:700px;
+    height:20px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+}
+label{
+    font-family:'Times New Roman', Times, serif;
+    margin-left: 15px;
+}
+.status{
+    height:270px;
+    background-color: white;
+    margin-left: 20px;
+    margin-top: 15px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding-left: 20px;
+    
+}
+.font{
+    font-size: 15px;
+    color:gray;
+    margin-left:15px;
+    margin-top: 2px;
+}
+.back{
+    background-color: lightgrey;
+    border-radius: 10px;
+    border:0px;
+    height:3px;
+    margin-left:15px;
+    margin-right:15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.colorb{
+    background-color: blue;
+    height:3px;
+    border-radius: 10px;
+
+}
+.msgbtn{
+    color:skyblue;
+    background-color: white;
+    border: 1px solid skyblue;
+    font-size: 15px;
+    height:30px;
+    width:110px;
+    margin-top: 10px;
+    padding: 2px;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 lightgrey;
+}
+.msgbtn:active{
+    background-color: aquamarine;
+}
+.ic{
+    margin-left: 90px;
+    border-radius: 200px;
+    margin-top: 10px;
+    border: 2px solid blue;
+}
+input{
+    padding-left: 15px;
+}
+
+ 
+ 
+
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body style="background-color: aliceblue;">
+    <div class="header"><center>
+        <form style="display: inline-flex; margin-top: 5px;">
+            <input type="button" class="button1" style="margin: 3px;padding: 2px;" value="preview">
+            <input type="button" class="button"style="margin: 3px; padding: 2px;" value="HTML">
+            <input type="button" class="button"style="margin: 3px; padding: 2px;" value="CSS">
+            <input type="button" class="button"style="margin: 3px; padding: 2px;" value="Download">
+           
+             <select class="butred" style="margin:3px; padding: 2px;">
+               <optgroup > 
+                  <option>actions</option>
+                  <option>preview</option>
+                  <option>drive ready</option>
+               </optgroup>
+            </select> 
+        </form></center>
+    </div>
+    <div style="display:inline-flex;">
+         <div class="profile" >
+           <img src="jh.png" height="110px" width="110px" class="ic">
+           <h2 style="margin-left: 100px;  margin-top:0px;margin-bottom: 0px;">John doe</h2>
+           <p class="font" style="margin-left: 80px;margin-top: 5px;margin-bottom: 5px;">Full Stack Developer</p>
+           <p class="font"style="margin-left: 60px; margin-top:0px; margin-bottom:0px;">Bay area, san francisco,CA</p>
+           <center ><input type="button" class="button" value="FOLLOW" style="  margin: 0px;margin-top: 10px; background-color: #1968f0; padding: 2px;">
+          <input type="button" class="msgbtn" value="messege"></center>
+          <div style="margin-top: 40px; margin-left: 20px; margin-right: 15px;">
+            <i class="fa-solid fa-globe" style=" height:5px;"></i>
+            <h4 style="display: inline;">website</h4>
+            <p class="font" style="display: inline; margin-left: 50px;">https:\\bootdey.com</p><hr>
+            <i class="fa-brands fa-github"style=" height:20px; width:20px"></i>
+            <h4 style="display: inline;">github</h4>
+            <p class="font" style="display: inline; margin-left: 120px;">bootdey</p><hr>
+            <i class="fa-brands fa-twitter" style="color: #1964e6;"></i>
+            <h4 style="display: inline;">twitter</h4>
+            <p class="font" style="display: inline; margin-left: 110px;">@bootdey</p><hr>
+            <i class="fa-brands fa-instagram" style="color: red;"></i>
+            <h4 style="display: inline;">instagram</h4>
+            <p class="font" style="display: inline; margin-left: 100px;">bootdey</p><hr>
+            <i class="fa-brands fa-facebook-f" style="color: #1968f0;"></i>
+            <h4 style="display: inline;">facebook</h4>
+            <p class="font" style="display: inline; margin-left: 110px;">bootdey</p><br>
+          </div>
+         </div>
+         <div>
+         <div class="main" >
+           <form>
+            <label>Full name</label><input type="text" placeholder="John Doe" class="form" /><br>
+            <label>Email</label><input type="email" class="form" placeholder="johndoe@example.com" style="margin-left: 79px;"/><br>
+            <label>Phone</label><input type="number"placeholder="(210)+567-234" maxlength="10" class="form" style="margin-left: 80px;"/><br>
+            <label>mobile</label><input type="number"placeholder="(610)+234-678" maxlength="10" class="form" style="margin-left: 77px;"/><br>
+            <label>Address</label><input type="text" placeholder="Bay area, san francisco,CA" class="form"style="margin-left: 70px;" /><br>
+             <center><input type="button2" class="button" value="save changes" style="width:110px;margin-top: 15px;background-color: #1968f0;"></center>
+        </form>
+         </div>
+         <div class="status">
+            <h4  ">Project status</h4>
+            <p class="font" style="margin-bottom: 5px;">Web Design</p>
+            <div class="back">
+              <div class="colorb" style="width: 85%;  height: 4px;"></div>
+          </div>
+              <p class="font" style="margin-bottom: 5px;">website markup</p>
+              <div class="back">
+                <div class="colorb" style="width: 70%; background-color: red; height: 4px;"></div>
+            </div>
+              <p class="font"style="margin-bottom: 5px;">one page</p>
+              <div class="back">
+                <div class="colorb" style="width: 55%; background-color: rgb(6, 152, 6); height: 4px;"></div>
+            </div>
+              <p class="font"style="margin-bottom: 5px;">mobile template</p>
+              <div class="back">
+                <div class="colorb" style="width: 45%; background-color: yellow; height: 4px;"></div>
+            </div>
+              <p class="font"style="margin-bottom: 5px;">backend API</p>
+              <div class="back">
+                <div class="colorb" style="width: 35%; background-color: skyblue; height: 4px;"></div>
+            </div>
+            </div>
+         </div>
+        </div>
+    </div>
+</body>
+</html>

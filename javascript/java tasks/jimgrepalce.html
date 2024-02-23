@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="../../capstone project/proimages/gallery1.jpeg" alt=""  id="im">
+    <button id="change">change image</button>
+    <script>
+        let ch=document.getElementById('change')
+        ch.addEventListener('click',func)
+        function func(){
+            let im=document.getElementById('im')
+            im.setAttribute('src','../../capstone project/proimages/gallery2.jpg')
+        }
+    </script>
+</body>
+</html>

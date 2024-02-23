@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selctors</title>
+</head>
+<body>
+    <!-- queryselector -->
+    <p >this is para1</p>
+    <p id="id1">this is para2</p>
+
+    <p id="head">by using id</p><br>
+    <p id="head">by using id</p>
+
+    <span class="new">by using class</span><br>
+    <span class="new">by using class</span>
+    <p id="head1">by using id</p><br>
+    <p id="head1">by using id</p>
+    <span class="new1">by using class</span><br>
+    <span class="new1">by using class</span>
+    <h1>hii</h1>
+    <span id="dis_dt"></span>
+    <a id="anch">click me</a>
+    <script>
+        let qs=document.querySelector("#id1")
+        console.log(qs)
+        qs.style.backgroundColor = "red";
+
+        // querrselectorall by using the id
+        let heads = document.querySelectorAll("#head")
+        console.log(heads)
+        heads[0].style.backgroundColor= "rosybrown";
+        heads[1].style.fontSize = "60px";
+
+          // querrselectorall by using the class
+
+        let local=document.querySelectorAll(".new")
+        console.log(local)
+        local[0].style.fontSize = "100px"
+        local[1].style.fontSize = "100px"
+         // querrselectorall by using the tagname
+
+         let tg=document.querySelectorAll("span")
+        console.log(tg)
+        local[0].style.backgroundColor="cadetblue"
+        local[1].style.backgroundColor="orange"
+
+        // using loop for multiple selctions
+        let loop = document.querySelectorAll("#head1,.new1,h1")
+        console.log(loop)
+        for(let i=0;i<loop.length;i++){
+            if (i%2==0){
+                loop[i].style.backgroundColor = "rosybrown"
+            }
+            else{
+                loop[i].style.backgroundColor = "cadetblue"
+            }
+        }
+
+        //using the set attribute
+        let myanch=document.getElementById("anch")
+        console.log(myanch)
+        myanch.setAttribute("href","https:/youtube.com")
+        myanch.setAttribute("target","_blank")
+
+        //create element
+        const newbtn = document.createElement("button")
+        newbtn.setAttribute("id","btn_id")
+        const newdiv = document.createElement("div")
+        newbtn.innerText = "click me"
+        newdiv.innerHTML ="<h1>this is an element</h1>"
+        newdiv.style.cssText = `height : 200px;
+                                width : 200px;
+                                background-color:rosybrown;
+                                border-radius:50px;
+                                padding:20px;`
+        const bdy = document.body
+        bdy.appendChild(newbtn)
+        bdy.appendChild(newdiv)
+
+        const mybtn = document.getElementById("btn_id")
+        mybtn.addEventListener("mouseover",fun3)
+        mybtn.addEventListener("click",fun2)
+        function fun3(){
+            newdiv.style.backgroundColor="skyblue"
+        }
+        function fun2(){
+           let dt1 = document.getElementById("dis_dt")
+           console.log(dt1)
+           let dt=new date()
+           console.log(dt)
+        }
+    </script>
+</body>
+</html>

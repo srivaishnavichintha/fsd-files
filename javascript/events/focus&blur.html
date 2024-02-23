@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>focus and blur</title>
+</head>
+<body>
+    <form>
+        <label>focus</label>
+        <input type="text" name="s1" onfocus="sample(this,'green')">
+        <label>blur</label>
+        <input type="text" name="s1" onblur="sample(this,'rosybrown')">
+        <label>focus</label>
+        <input type="text" name="s1" onfocusin="sample(this,'pink')">
+
+        <script type="text/javascript">
+              function sample(e,value){
+                e.style.background=value;
+              }
+        </script>
+    </form>
+</body>
+</html>

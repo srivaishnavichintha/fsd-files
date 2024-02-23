@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    table,tr,td{
+        border: 2px solid black;
+        border-collapse: collapse;
+    }
+    td{
+        width: 250px;
+        height: 50px;
+    }
+</style>
+</head>
+<body>
+  <table>
+    <button id="btn">get names</button>
+    <table>
+        <tr>
+            <td>
+            </td>
+            <td>
+
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+
+            </td>
+            <td></td>
+        </tr>
+  </table>
+  <script>
+         document.getElementById("btn").addEventListener("click",()=>{
+        var a=document.querySelectorAll("td");
+     var arr=["blue","yellow","red","green","purple","yellow","orange","grey","pink"]
+     var arr2=["vaishnavi","chinnu","sonu","jyothirmayi","sri","sonu","teju","prasanna","rajini"]
+        for(var i=a.length-1;i>=0;i--){
+            a[a.length-i-1].innerText=arr2[a.length-i-1];
+            a[a.length-i-1].style.backgroundColor=arr[arr.length-i-1];
+        }
+       });
+  </script>
+</body>
+</html>

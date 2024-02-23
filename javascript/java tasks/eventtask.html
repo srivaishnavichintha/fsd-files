@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>enter name:</label><input type="text"  onkeyup="error(this.value)" id="in">
+    <p id="p-id"> </p>
+    <p id="p-id2"></p>
+    <script>
+        function error(value){
+            let c=document.getElementById("in").value
+            let p2 =document.getElementById("p-id2")
+            p2.innerText=c.length
+           if(c.length<3){
+               let p =document.getElementById("p-id")
+               p.innerText="please enter 3 character"
+               p.style.cssText=`color:red`
+               let b=document.getElementById("in")
+               b.style.cssText=`border-color:red`
+           }
+           else{
+            let p =document.getElementById("p-id")
+               p.innerText="   "
+               let b=document.getElementById("in")
+               b.style.cssText=`border-color:black`
+           }
+        }
+    </script>
+</body>
+</html>

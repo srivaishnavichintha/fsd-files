@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+    #one{
+        border: 1px solid black;
+        height:300px;
+        width:200px;
+        background-color: cadetblue;
+        float: left;
+        margin: 20px;
+    }
+    #one:hover{
+        transform: translate3d(10px, 20px,30px);
+    }
+    #two{
+        border: 1px solid black;
+        height:300px;
+        width:200px;
+        background-color: rosybrown;
+        float: left;
+        margin: 20px;
+    }
+    #two:hover{
+        transform: translateX(40px);
+    }
+    #three{
+        border: 1px solid black;
+        height:300px;
+        width:200px;
+        background-color: #7E2553;
+        float: left;
+        margin: 20px;
+    }
+    #three:hover{
+        transform: translateY(80px);
+    }
+    #four{
+        border: 1px solid black;
+        height:300px;
+        width:200px;
+        background-color: #1B4242;
+        float: left;
+        margin: 20px;
+    }
+    #four:hover{
+        transform: rotate( 60deg);
+        
+    }
+    #five{
+        border: 1px solid black;
+        height:300px;
+        width:200px;
+        background-color: #A2678A;
+        float: left;
+        margin: 20px;
+    }
+    #five:hover{
+        transform: rotate(-60deg); 
+    }
+    #six{
+        border: 1px solid black;
+        height:300px;
+        width:200px;
+        background-color: #365486;
+        float: left;
+        margin: 20px;
+    }
+    #six:hover{
+        transform: scale(1.5);
+    }
+    #seven{
+        border: 1px solid black;
+        height:300px;
+        width:200px;
+        background-color: #AE445A;
+        float: left;
+        margin: 20px;
+    }
+    #seven:hover{
+        transform: scaleX(1.1);
+    }
+    #eight{
+        border: 1px solid black;
+        height:300px;
+        width:200px;
+        background-color: #4F6F52;
+        float: left;
+        margin: 20px;
+    }
+    #eight:hover{
+        transform: scaleY(1.2);
+    }
+    #nine{
+        border: 1px solid black;
+        height:300px;
+        width:200px;
+        background-color: #427D9D;
+        float: left;
+        margin: 20px;
+    }
+    #nine:hover{
+        transform: skew(30deg,10deg);
+    }
+    #ten{
+        border: 1px solid black;
+        height:300px;
+        width:200px;
+        background-color: #B06161;
+        float: left;
+        margin: 20px;
+    }
+    #ten:hover{
+        transform: skewX(30deg);
+    }
+    #eleven{
+        border: 1px solid black;
+        height:300px;
+        width:200px;
+        background-color: cadetblue;
+        float: left;
+        margin: 20px;
+    }
+    #eleven:hover{
+        transform: skewY(60deg);
+    }
+    #twelve{
+        border: 1px solid black;
+        height:300px;
+        width:200px;
+        background-color: rosybrown;
+        float: left;
+        margin: 20px;
+    }
+    #twelve:hover{
+        transform: matrix(1,1,0,1,7,30); /* matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
+    }
+    @media screen and (max-width:498px){
+        #one,#two,#three,#four,#five,#six,#seven,#eight,#nine,#ten,#eleven,#twelve{
+            width:100%;
+        }
+    }
+</style>
+<body>
+       <center><h1>Translate in CSS</h1></center><hr>
+       <div id="one"> translate</div>
+       <div id="two">translateX</div>
+       <div id="three">translateY</div>
+       <div id="four">rotate+ clockwise</div>
+       <div id="five">rotate- anticlockwise</div>
+       <div id="six"> scale</div>
+       <div id="seven"> scaleX</div>
+       <div id="eight"> scaleY</div>
+       <div id="nine"> skew</div>
+       <div id="ten"> skewX</div>
+       <div id="eleven"> skewY</div>
+       <div id="twelve"> matrix</div>
+</body>
+</html>
