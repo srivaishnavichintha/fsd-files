@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function strmethods(strname){
+            document.write(strname+'<br>')
+        }
+        let str="Technical hub training"
+        strmethods(' substr = '+str.substr(14,8));
+        strmethods('substring = '+str.substring(0,9));
+        strmethods('string replace = '+str.replace('Technical hub','Thub'))
+        strmethods("search()="+str.search(/training/))
+        strmethods("lowercase="+str.toLocaleLowerCase())
+        strmethods("uppercase="+str.toLocaleUpperCase())
+        strmethods('index of T = '+str.indexOf('T'));
+        strmethods('includes of W in string = '+str.includes('w'))
+        strmethods('slice of the string = '+str.slice(10,14))
+        strmethods('last index of= '+str.lastIndexOf("training"))
+        strmethods('unicode of h = '+str.charCodeAt("3"))
+        strmethods('trims excess spaces = '+str.trim())
+        strmethods('character at position 3 = '+str.charAt(3))
+        strmethods('string (valueof) = '+str.valueOf())
+        strmethods('split method =' +str.split(' '))
+        let num=20;
+        strmethods('converting number to string = '+num.toString())
+        document.write(typeof(num)+'<br>')
+        strmethods('match method =' +str.match('hub '))
+    </script>
+</body>
+</html>

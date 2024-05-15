@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nums=[9,7,80]
+        let sum= nums.reduce(function(acc,ele){
+            return acc+ele
+        },0)
+        console.log(sum)
+        let maximun_value= nums.reduce((acc,ele,i,arr)=>{
+            if( acc<ele ){
+              return ele
+            }
+            else {
+                return acc
+            }
+        },nums[0])
+        console.log(maximun_value)
+    </script>
+</body>
+</html>

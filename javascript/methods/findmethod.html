@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let courses=['html','css','javascript','bootstrap']
+        let getcourses=courses.find((course,index)=>{
+            return course.endsWith('s');
+        })
+        console.log(getcourses)
+        let getcourse=courses.find(function(course,index){
+            return course.startsWith('b');
+        })
+        console.log(getcourse)
+        let fsd=courses.find(function get(course,index){
+            return course.startsWith('j');
+        })
+        console.log(fsd)
+    </script>
+</body>
+</html>
+
+
+

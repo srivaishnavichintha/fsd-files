@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>foreach funtion</title>
+</head>
+<body>
+    <script>
+        let salary=[45000,60000,50000]
+         salary.forEach((amount,index)=>{
+             var hike=amount/10
+            console.log(hike)
+            salary[index]=amount+hike
+        })
+        console.log(salary)
+        salary.forEach( function (amount,index){
+             salary[index]=amount-500
+        })
+        console.log(salary)
+    </script>
+</body>
+</html>
+
+

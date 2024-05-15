@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div id="details" style="margin: 50px;"><br></div> 
+    <script>
+        let colleges=[{
+            name:'aec',
+            code:255,
+            place:'surampalem'
+        },{
+            name:'acet',
+            code: 249,
+            place:'kkd'
+        },
+        {
+            name:'acet',
+            code: 249,
+            place:'kkd'
+        }]
+        console.log(colleges)
+        let det=document.getElementById("details")
+                let print= colleges.map((clg,index,arr)=>{
+                const ptag = document.createElement("p")
+                const htag = document.createElement("h")
+                let h1=document.createTextNode("record "+(index+1))
+                let p1=document.createTextNode("college name:"+clg.name )
+                ptag.appendChild(p1)
+                const ptag2 = document.createElement("p")
+                let p=document.createTextNode("code:"+clg.code )
+                ptag2.appendChild(p)
+                const ptag3 = document.createElement("p")
+                let p2=document.createTextNode("place:"+clg.place )
+                ptag3.appendChild(p2)
+                det.appendChild(h1)
+               det.appendChild(ptag)
+               det.appendChild(ptag2)
+               det.appendChild(ptag3)
+                
+           
+        })
+        
+       
+    </script>
+</body>
+</html>

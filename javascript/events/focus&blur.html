@@ -3,22 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>focus and blur</title>
+    <title>Document</title>
 </head>
 <body>
-    <form>
-        <label>focus</label>
-        <input type="text" name="s1" onfocus="sample(this,'green')">
-        <label>blur</label>
-        <input type="text" name="s1" onblur="sample(this,'rosybrown')">
-        <label>focus</label>
-        <input type="text" name="s1" onfocusin="sample(this,'pink')">
-
-        <script type="text/javascript">
-              function sample(e,value){
-                e.style.background=value;
-              }
-        </script>
+    <form id="form">
+        <label>Enter Name:</label>
+        <input type="text" name="name" onchange="changetext()" id="fn"><br><br><br>
+        <label>Branch</label>
+        <select style="width:300px; height:30px;" name="branch">
+            <option>select Branch</option>
+            <option>CME</option>
+            <option>ECE</option>
+            <option>CCN</option>
+            <option>EEE</option>
+            </select><br><br>
+       
+        <input type="button"  value="submit"  onclick="submitform()">
+        <input type="button" value="reset"  onclick="resetform()">
     </form>
+    <script>
+        function submitform(){
+            document.getElementById("form").submit();
+        }
+       
+        function resetform(){
+            document.getElementById("form").reset();
+        }
+        function changetext(){
+            let changetext=document.getElementById("fn");
+            fn.value=fn.value.toUpperCase();
+        }
+        
+    
+        </script>
 </body>
 </html>

@@ -1,0 +1,18 @@
+.logo{
+    margin-left: -40px; 
+    margin-right: 100px;
+}
+.gap{
+    margin-right: 10px;
+}
+.button{
+    background-color: rgb(222, 57, 57);
+    border: none;
+    margin-right: 20px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+*{
+    font-weight: 30;
+}

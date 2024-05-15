@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height:200px;
+            width:400px;
+            border: 2px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+     <center>   <h1 style="color:red">Guess the nunber</h1>
+        <p style="color: aqua;">guess a number between 1 and 10</p>
+        <input type="number" id="in_tag">
+        <button onclick="guess()" style="background-color: rgb(109, 240, 196);">submit guess</button>
+        <p id="ptag" style="font-size: 20px;"></p></div></center>
+    <script>
+       
+        let num=document.getElementById("in_tag")
+         function guess(){
+            let x= Math.floor(Math.random()*10)
+            console.log(x)
+           if(num.value==x){
+            
+                let ptag=document.getElementById("ptag")
+                ptag.innerHTML="congratulations you guess the number"
+           }
+           else{
+            let ptag=document.getElementById("ptag")
+                 ptag.innerHTML="sorry try again!!!"
+           }
+         }
+           
+         
+    </script>
+</body>
+</html>

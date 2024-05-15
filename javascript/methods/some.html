@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let trainees=['vaishnavi@gmail.com','sri@gmail.com','sai@gmail.com']
+        let email_check=trainees.some((email,i,arr)=>{
+                 return email=='sri@gmail.com'
+        })
+        console.log(email_check)
+        let email_ch=trainees.some(function(email,i,arr){
+                 return email=='vaishnavi@gmail.com'
+        })
+        console.log(email_ch)
+        let emailcheck=trainees.some(function check(email,i,arr){
+                 return email=='vaishnavi1@gmail.com'
+        })
+        console.log(emailcheck)
+    </script>
+</body>
+</html>

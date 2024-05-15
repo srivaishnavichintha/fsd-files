@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>output is at console</h1>
+    <script>
+              let birthyear=[1998,2022,1999,2007,2000,2012]
+              let ages=birthyear.map(function(year,index,arr){
+                let age=2024-year
+                console.log(age)
+                return "current age is "+age
+              })
+             console.log(ages)
+
+             //map using arrow
+
+             let votecheck=birthyear.map((year,index,arr)=>{
+                 let age=2024-year
+                 if(age>=18){
+                    console.log("elligible to cast vote")
+                 }
+                 else{
+                    console.log("not eligible")
+                 }
+             })
+    </script>
+</body>
+</html>

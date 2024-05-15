@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../bootstrap/bootdata/css/bootstrap.min.css">
+    <script src="../../bootstrap/bootdata/js/bootstrap.bundle.min.js"></script>
+    <title>FORM</title>
+    <style>
+        .col-6{
+            /* height: 470px; */
+            border-radius: 25px;
+            padding: 10px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <br><br>
+        <div class="row">
+            <div class="col-6 offset-3">
+                <br>
+                <h3>Form Validation</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Name</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name"required minlength="8" maxlength="50" name="Name">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                      <label for="exampleFormControlInput1">Email address</label>
+                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required name="Email">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Phone Numuber</label>
+                        <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="Phone Numuber"required name="Phone" minlength="10" maxlength="10">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Password</label>
+                        <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="password"required name="PWD" onkeyup="check()">
+                    </div>
+                    <br>
+                    <p style="color: red;">Atleast one capital letter</p>
+                    <p style="color: red;">Atleast one small letter</p>
+                    <p style="color: red;">Atleast eight letters</p>
+                    <p style="color: red;">Atleast one Numuber</p>
+                    <label for="">FAVOURITE</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Default checkbox
+                        </label>
+                      </div>
+                    <div class="row">
+                        <button type="submit" class="btn btn-success col-10 offset-1" style="border-radius: 20px;">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    var pwd=document.getElementsByTagName('input')[3];
+    var em=document.getElementsByTagName('p');
+    function check(){
+        var small=/[a-z]/g;
+        var cap=/[A-Z]/g;
+        var num=/[0-9]/g
+        
+        if(pwd.value.match(small)){
+            em[1].style.color='green';
+        }
+        if(pwd.value.match(cap)){
+            em[0].style.color='green';
+        }
+        if(pwd.value.length>=8){
+            em[2].style.color='green';
+        }
+        if(pwd.value.match(num)){
+            em[3].style.color='green';
+        }
+    }
+</script>

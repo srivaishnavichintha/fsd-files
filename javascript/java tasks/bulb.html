@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>hello javascript!</h1>
+    <img src="lightbulb.png" alt=""  id="im"><br>
+   <button id="change" style="padding:10px">bulb on/off</button></center>
+    <script>
+        let ch=document.getElementById('change')
+        ch.addEventListener('click',func)
+        function func(){
+            let im=document.getElementById('im')
+            im.setAttribute('src','light.png')
+        }
+        ch.addEventListener('dblclick',function(){
+            let im=document.getElementById('im')
+            im.setAttribute('src','lightbulb.png')
+        })
+    </script>
+</body>
+</html>

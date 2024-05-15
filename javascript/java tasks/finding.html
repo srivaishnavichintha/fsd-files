@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" onkeypress="text(this.value)">
+    <p id="p_id"></p>
+    <script>
+        function text(value){
+            // document.getElementById("p_id").innerHTML=value
+            let courses=['html','css','javascript','bootstrap']
+             let getcourses=courses.find((course,index)=>{
+            return course.indexOf(0)==value.indexOf(0);
+            console.log(value)
+        })
+        document.getElementById("p_id").innerHTML=getcourses
+        }
+    </script>
+</body>
+</html>

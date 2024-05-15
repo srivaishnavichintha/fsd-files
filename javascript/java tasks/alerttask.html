@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            color: red;
+            font-size: 15px;
+            margin: 0;
+        }
+        #my_form{
+            
+            text-align: left;
+            padding: 10px;
+            display: inline-block;
+        }
+        .decoration{
+            margin-top: 50px;
+            display: inline-block;
+            padding: 20px;
+            box-shadow: 0px 4px 4px 5px silver;
+        }
+        input{
+            width: 300px;
+            height: 30px;
+            margin: 10px;
+            border: 1px solid grey;
+            border-radius: 13px;
+        }
+      input[type="button"]{
+        width: 305px;
+        border: none;
+        height: 35px;
+        background-color: rgb(91, 186, 91);
+        color: white;
+      }
+    </style>
+</head>
+<body>
+   <center><div class="decoration">
+    <form id="my_form">
+        <h1>Form validation</h1>
+        <label>Name(8-50 characters):</label><br>
+        <input type="text" id="in" name="fname" ><br>
+        <p id="name_check"></p>
+        <label>Email:</label><br><input type="email" value=" "   name="email" id="mail"/><br>
+        <p id="email_check"></p>
+        <label>Number(10 digits):</label><br><input type="tel" name="number" maxlength="10" id="number"/><br>
+        <p id="number_check"></p>
+        <label>Password:</label><br><input type="password" id="pass" name="password"/><br><p id="pass_check"></p>
+        <input type="button" onclick="check()" value="submit" id="sbtbtn"> 
+       </form>
+    </div></center> 
+    <script>
+         function check(){
+                let input=document.getElementById('in')
+                let email=document.getElementById('mail').value
+                let number=document.getElementById('number').value
+                let pass=document.getElementById('pass').value
+                var small=/[a-z]/g;
+                var cap=/[A-Z]/g;
+                var num=/[0-9]/g
+                  let val=input.value
+                 if(val.length==0){
+                    document.getElementById("name_check").innerHTML="name required"  
+                 }
+                else if(val.length<8||val.length>50){
+                    document.getElementById("name_check").innerHTML="name should be in between 8 and 50 characters"
+                 }
+                  else if(val.length!=0){
+                    document.getElementById("name_check").innerHTML=""  
+                 }
+                  if(email.length==0){
+                    document.getElementById("email_check").innerHTML="email required"  
+                  }
+                  else if(email.includes('@')==0){
+                    document.getElementById("email_check").innerHTML="invalid mail"  
+                  }
+                  else if(email.length!=0){
+                    document.getElementById("email_check").innerHTML=""  
+                 }
+                  if(number==0){
+                    document.getElementById("number_check").innerHTML="number required"  
+                  }
+                  else if(number.length<10||number.length>11){
+                    document.getElementById("number_check").innerHTML="number invalid"  
+                  }
+                  else if(number.length!=0){
+                    document.getElementById("number_check").innerHTML=""  
+                 }
+                 if(pass.length==0){
+                    document.getElementById("pass_check").innerHTML="password required"  
+                  }
+                  else if(pass.length<8){
+                    document.getElementById("pass_check").innerHTML="password must contain the 8 characters"  
+                  }
+                  else{
+                    document.getElementById("my_form").submit()  
+                 }
+                
+                 
+        }
+        
+    </script>
+</body>
+</html>

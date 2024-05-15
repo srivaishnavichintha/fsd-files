@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal caluculator</title>
+    <link rel="stylesheet" href="../../bootstrap/bootdata/css/bootstrap.min.css">
+    <style>
+        .main{
+            margin-top: 50px;
+        }
+        .btn{
+            padding: 20px;
+            border:1px solid rgb(102, 191, 246);
+            width:100px;
+            border-radius:5px;
+            margin:2px;
+            background-color:  rgb(102, 191, 246);
+           
+        }
+        .btn:hover{
+            background-color:  rgb(197, 224, 241);
+        }
+        #display{
+            border:1px solid rgb(102, 191, 246);
+            height:100px;
+            width:425px;
+            border-radius:5px;
+        }
+        .in{
+            border:1px solid rgb(102, 191, 246);
+            padding: 19px;
+            width: 318px;
+            text-align: right;
+            margin-right: 2px;
+            border-radius:5px;
+        }
+    </style>
+    <script src= 
+    "https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.min.js"
+              integrity= 
+    "sha512-iphNRh6dPbeuPGIrQbCdbBF/qcqadKWLa35YPVfMZMHBSI6PLJh1om2xCTWhpVpmUyb4IvVS9iYnnYMkleVXLA=="
+              crossorigin="anonymous"
+              referrerpolicy="no-referrer"></script>
+</head>
+<body>
+   <center> <div class="main">
+        <input id="display" class="m-2" style="font-size: 50px; text-align: center;" placeholder="CALUCULATOR">
+        <div class="grid text-center">
+           <input type="text" class=" in " id="input">
+           <button class="btn" id="clear">c</button><br>
+        </div>
+        <div class="grid text-center">
+        <button class="btn" id="button">1</button>
+        <button class="btn " id="button">2</button>
+        <button class="btn" id="button">3</button>
+        <button class="btn"id="op">/</button>
+        </div>
+        <div class="grid text-center">
+            <button class="btn" id="button">4</button>
+            <button class="btn" id="button">5</button>
+            <button class="btn" id="button">6</button>
+            <button class="btn"id="op">*</button>
+        </div>
+        <div class="grid text-center">
+            <button class="btn" id="button">7</button>
+            <button class="btn" id="button">8</button>
+            <button class="btn" id="button">9</button>
+            <button class="btn"id="op">-</button>
+        </div>
+        <div class="grid text-center">
+            <button class="btn" id="button">0</button>
+            <button class="btn"id="op">.</button>
+            <button class="btn" onclick="equalto()">=</button>
+            <button class="btn" id="op">+</button>
+        </div>
+    </div></center>
+   <script>
+           let btn= document.querySelectorAll("#button")
+           let input = document.getElementById("input")
+           btn[0].addEventListener("click",()=>{
+                input.value= input.value+ btn[0].innerText
+           } )
+           btn[1].addEventListener("click",()=>{
+               input.value= input.value+ btn[1].innerText
+           } )
+           btn[2].addEventListener("click",()=>{
+                input.value= input.value+ btn[2].innerText
+           } )
+           btn[3].addEventListener("click",()=>{
+                input.value= input.value+ btn[3].innerText
+           } )
+           btn[4].addEventListener("click",()=>{
+                input.value= input.value+ btn[4].innerText
+           } )
+           btn[5].addEventListener("click",()=>{
+                input.value= input.value+ btn[5].innerText
+           } )
+           btn[6].addEventListener("click",()=>{
+                input.value= input.value+ btn[6].innerText
+           } )
+           btn[7].addEventListener("click",()=>{
+               input.value= input.value+ btn[7].innerText
+           } )
+           btn[8].addEventListener("click",()=>{
+                input.value= input.value+ btn[8].innerText
+           } )
+           btn[9].addEventListener("click",()=>{
+                input.value= input.value+ btn[9].innerText
+           } )
+           let clear = document.getElementById("clear")
+           clear.addEventListener("click",()=>{
+                input.value=" "
+           } )
+           let op = document.querySelectorAll("#op")
+           op[0].addEventListener("click",()=>{
+                input.value= input.value+ op[0].innerText
+           } )
+           op[1].addEventListener("click",()=>{
+                input.value= input.value+ op[1].innerText
+           } )
+           op[2].addEventListener("click",()=>{
+                input.value= input.value+ op[2].innerText
+           } )
+           op[3].addEventListener("click",()=>{
+                input.value= input.value+ op[3].innerText
+           } )
+           op[4].addEventListener("click",()=>{
+                input.value= input.value+ op[4].innerText
+           } )
+           //caluculator function
+           function equalto(){
+			let x = document.getElementById("input").value 
+			let y = math.evaluate(x) ;
+			document.getElementById("display").value = y ;
+            
+            }
+   </script>
+</body>
+</html>
+

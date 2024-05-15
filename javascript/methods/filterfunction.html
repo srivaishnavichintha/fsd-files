@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nums=[8,9,-89,60,-4,9]
+        let even_nums=nums.filter((ele,i)=>{
+            return ele%2==0
+        })
+        console.log(even_nums)
+        let odd_nums=nums.filter(function(ele,i){
+            return ele%2!=0
+        })
+        console.log(odd_nums)
+        let positive=nums.filter( function greatest(ele,i){
+            return ele>=0
+        })
+        console.log(positive)
+    </script>
+</body>
+</html>

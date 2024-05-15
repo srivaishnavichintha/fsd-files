@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>emailcheck</title>
+</head>
+<body>
+    <input type="text" value="vaishnavi@gmail.com" id="in">
+    <p id="msg"></p>
+    <button id="btn"> check mail</button>
+    <script>
+        let but=document.getElementById("btn")
+        but.addEventListener("click",function(){
+            let email=['vaishnavi@gmail.com','sri@gmail.com','sai@gmail.com']
+            let intag=document.getElementById("in").value
+            console.log(intag)
+            let chk = email.reduce(function(acc,ele,i,arr){
+               if(intag==ele[i]){
+                console.log["v"]
+               }
+            },email[0])
+        })
+        
+    </script>
+</body>
+</html>

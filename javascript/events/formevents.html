@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form events</title>
+</head>
+<body>
+    <form id="my_form">
+          <label>enter your name</label>
+          <input type=" text" id="fn" name="fname" onchange="change()" id="fn"><br>
+          <label>select college</label>
+          <select style="width:300px;height:30px"onchange="sample(this.value)"name="branch">
+                 <option>--select college--</option>
+                 <option value="AEC" >AEC</option>  
+                 <option value="AEC" >AECT</option> 
+                 <option value="AEC" >AEOE</option>   
+          </select>
+          <p id="p_id"></p>
+           <input type="button" onclick="submitform()" value="submit">
+           <input type="button" onclick="resetform()" value="reset">
+    </form>
+
+    <script typr="text/javascript">
+        function submitform(){
+                 document.getElementById("my_form").submit()
+        }
+        function resetform(){
+                 document.getElementById("my_form").reset()
+        }
+        function sample(value){
+                  let ch=document.getElementById("p_id").innerText=value
+        }
+         function change( fname){
+                 let fname=document.getElementById("fn")
+                 fname.value=fname.value.toUpperCase();
+         }
+    </script>
+</body>
+</html>

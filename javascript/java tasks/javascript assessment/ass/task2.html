@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task2-object</title>
+</head>
+<body>
+    <center><h1> Objects in java script</h1><hr></center> 
+    <script>
+        let users={
+            name:'kalki',
+            id:123,
+            college:'thub'
+        }
+        console.log(typeof(users))
+        console.log(users)
+        console.log(users.id)//dot notation
+        console.log(users['name'])//array notation
+        //modifying name
+        users.name='prassu'
+        console.log(users.name)
+        //adding a key-value pair
+        users.age=18
+        console.log(users)
+        console.log(users.age)
+        //removing key-value  pair
+        delete users.age
+        console.log(users)
+        console.log('age' in users)
+        console.log('id' in users)
+    </script>
+</body>
+</html>
